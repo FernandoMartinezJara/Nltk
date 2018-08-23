@@ -1,0 +1,23 @@
+from nltk.tokenize import word_tokenize, sent_tokenize
+import wikipedia as wiki
+
+cat = wiki.summary('cat')
+print(cat)
+print()
+print(type(cat))
+print()
+tokWord_cat = word_tokenize(cat)
+print(tokWord_cat)
+print()
+print(tokWord_cat[0:5])
+print()
+tokSent_cat = sent_tokenize(cat)
+print(tokSent_cat)
+print()
+print(tokSent_cat[0:3])
+print()
+tut_wiki = wiki.summary('king Tut')
+print(tut_wiki)
+print()
+tokSent_tut = sent_tokenize(tut_wiki)
+print(tokSent_tut[0])
